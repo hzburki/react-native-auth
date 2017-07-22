@@ -12,6 +12,7 @@ class LoginForm extends Component {
       <Card>
         <CardSection>
           <Input
+            label={'Email'}
             value={this.state.text}
             onChangeText={email => this.setState({ email })}
           />
@@ -19,6 +20,7 @@ class LoginForm extends Component {
 
         <CardSection>
           <Input
+            label={'Password'}
             value={this.state.text}
             onChangeText={password => this.setState({ password })}
           />
