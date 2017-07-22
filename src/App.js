@@ -3,12 +3,13 @@ import { Text, View } from 'react-native';
 import firebase from 'firebase';
 
 import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
   componentWillMount() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyCc3IYjCIfZAuDJQJvSfWOElX3NCFbdw1o',
       authDomain: 'react-auth-2454c.firebaseapp.com',
+      apiKey: 'AIzaSyCc3IYjCIfZAuDJQJvSfWOElX3NCFbdw1o',
       databaseURL: 'https://react-auth-2454c.firebaseio.com',
       projectId: 'react-auth-2454c',
       storageBucket: 'react-auth-2454c.appspot.com',
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <View>
         <Header headerText={'Authentication'} />
-        <Text>Hello Auth</Text>
+        <LoginForm />
       </View>
     );
   }
